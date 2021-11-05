@@ -1,1 +1,1 @@
-# Snake
+# Simple snake game using ncurses
