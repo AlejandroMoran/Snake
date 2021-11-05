@@ -10,13 +10,6 @@ int main () {
 	serpiente[0].posy=15;
 	int segmentos=1;
 	int d=-1;
-// 	initscr();                      /* Start curses mode              */
-// 	printw("Hello World !!!");      /* Print Hello World              */
-// 	refresh();                      /* Print it on to the real screen */
-// 	getch();                        /* Wait for user input */
-// 	endwin();                       /* End curses mode                */
-// 	return 0;
-// 	}
 
 		WINDOW * mainwin;
 	initscr();
