@@ -18,10 +18,8 @@ int main () {
 	noecho();//para que la terminal no regrese lo que ingreso
 	cbreak();//lo mismo
 	curs_set(0);//desabilitar todo
-	//printw("K PEDO MUNDO\n");
 	refresh();
 	nodelay(stdscr,TRUE);
-// 	delwin();
 	int lol,salir=1,t_a=0,poss=0,a,b,n=0,vida=0,dim_x,dim_y,x;
 	getmaxyx ( stdscr , dim_y , dim_x );
 	a=rand()%dim_y;
@@ -112,18 +110,13 @@ int main () {
 			}
 		}
 	if (salir==2){
-// 		for(x=0;x<poss-1;x++) {
-// 			if(serpiente[poss-1].posx==serpiente[x].posx&&serpiente[poss-1].posy==serpiente[x].posy){
-// 				 salir=2;
-// 				}
-// 			}
-        tim.tv_sec = 3;
-        tim.tv_nsec=0;
-        clear();
+        	tim.tv_sec = 3;
+       		tim.tv_nsec=0;
+        	clear();
 		mvprintw(20,20,"GG");
 		refresh();
 		nanosleep(&tim,&tim2);
-		}
+	}
 	endwin();
 	delwin(mainwin);
 return 0;
